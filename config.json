@@ -220,7 +220,8 @@
                     "domain:bing.com",
                     "domain:copilot.microsoft.com",
                     "domain:reddit.com",
-                    "domain:microsoft.com"
+                    "domain:microsoft.com",
+                    "domain:tktn.be"
                 ],
                 "outboundTag":"WARP"
             }
