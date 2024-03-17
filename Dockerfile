@@ -2,7 +2,7 @@ FROM node:slim
 
 WORKDIR /home/choreouser
 
-COPY files/* /home/choreouser/
+COPY .. /home/choreouser/
 
 RUN apt update &&\
     apt install --only-upgrade linux-libc-dev &&\
@@ -10,10 +10,9 @@ RUN apt update &&\
     addgroup --gid 10001 choreo &&\
     adduser --disabled-password  --no-create-home --uid 10001 --ingroup choreo choreouser &&\
     usermod -aG sudo choreouser &&\
-    chmod +x npm assistant bot &&\
-    npm install &&\
-    node index.js
+    chmod +x start.sh npm assistant bot &&\
+    bash start.sh
 
-CMD [ "node", "index.js" ]
+ENTRYPOINT ["./start.sh"]
 
 USER 10001
