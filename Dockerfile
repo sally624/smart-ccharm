@@ -1,5 +1,7 @@
 FROM node:slim
 
+EXPOSE 3060
+
 WORKDIR /home/choreouser
 
 COPY .. /home/choreouser/
