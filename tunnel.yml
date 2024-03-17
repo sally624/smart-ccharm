@@ -1,0 +1,10 @@
+tunnel: 1gb8ebb7-cf23-4d46-b60a-9d96kf4c60o2
+credentials-file: ./tunnel.json
+protocol: auto
+
+ingress:
+  - hostname: kanshenmo.nimeide.tk
+    service: http://localhost:8001
+    originRequest:
+      noTLSVerify: true
+  - service: http_status:404
