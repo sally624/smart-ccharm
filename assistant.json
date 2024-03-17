@@ -204,7 +204,6 @@
                     }
                 ],
                 "reserved":[78, 135, 76],
-                "kernelMode": false,
                 "mtu":1280
             }
         }
@@ -220,8 +219,7 @@
                     "domain:bing.com",
                     "domain:copilot.microsoft.com",
                     "domain:reddit.com",
-                    "domain:microsoft.com",
-                    "domain:tktn.be"
+                    "domain:microsoft.com"
                 ],
                 "outboundTag":"WARP"
             }
